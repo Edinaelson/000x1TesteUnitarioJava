@@ -12,7 +12,19 @@ public class testeCalculadora{
 		Calculadora calculo = new Calculadora();
 		
 		int resultado = calculo.soma(10, 5);
+		
 		assertEquals(15, resultado);
 	}
+	
+	@Test
+	public void testSub() {
+		Calculadora subtracao = new Calculadora();
+		
+		int resultado = subtracao.sub(10, 5);
+		
+		assertEquals(5, resultado);
+	}
+	
+	
 
 }
